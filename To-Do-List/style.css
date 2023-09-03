@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addtask {
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 5px;
+    box-shadow: 0 0 5px black;
+}
+
+.addtask .name {
+    font-size: large;
+    height: 30px;
+    border-radius: 5px;
+    flex: 5;
+    background-color: transparent;
+}
+
+.addtask i {
+    flex: 1;
+    font-size: 1.2rem;
+    background-color: white;
+    border: 2px solid green;
+    padding: 3px 2px;
+    margin-left: 5px;
+    color: green;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.addtask i:hover {
+    color: white;
+    background-color: green;
+    box-shadow: 0 0 2px green;
+}
+
+button {
+    border: none
+}
+
+.tasks .items {
+    background-color: white;
+    position: relative;
+    top: -50px;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.items li {
+    flex: 5;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.checkbtn {
+    flex: 1;
+    font-size: 1.2rem;
+    background-color: white;
+    color: orange;
+    border-radius: 15px;
+    border: 3px solid orange;
+    padding: 10px 5px;
+}
+
+.checkbtn:hover {
+    background-color: orange;
+    color: white;
+}
+
+.trashbtn {
+    flex: 1;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 5px;
+}
+
+.trashbtn:hover {
+    background-color: red;
+    color: white;
+}
